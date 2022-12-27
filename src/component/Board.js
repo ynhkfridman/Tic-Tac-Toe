@@ -79,14 +79,14 @@
         
         useEffect(() => { 
                         
-                if(   ((gameSquares[0].isMark) && (gameSquares[0].isX == gameSquares[1].isX && gameSquares[1].isX == gameSquares[2].isX))
-                    ||((gameSquares[3].isMark) && (gameSquares[3].isX == gameSquares[4].isX && gameSquares[4].isX == gameSquares[5].isX))
-                    ||((gameSquares[6].isMark) && (gameSquares[6].isX == gameSquares[7].isX && gameSquares[7].isX == gameSquares[8].isX))
-                    ||((gameSquares[0].isMark) && (gameSquares[0].isX == gameSquares[3].isX && gameSquares[3].isX == gameSquares[6].isX))
-                    ||((gameSquares[1].isMark) && (gameSquares[1].isX == gameSquares[4].isX && gameSquares[4].isX == gameSquares[7].isX))
-                    ||((gameSquares[2].isMark) && (gameSquares[2].isX == gameSquares[5].isX && gameSquares[5].isX == gameSquares[8].isX))
-                    ||((gameSquares[0].isMark) && (gameSquares[0].isX == gameSquares[4].isX && gameSquares[4].isX == gameSquares[8].isX))
-                    ||((gameSquares[2].isMark) && (gameSquares[2].isX == gameSquares[4].isX && gameSquares[4].isX == gameSquares[6].isX))
+                if(   ((gameSquares[0].isMark) && (gameSquares[0].isX === gameSquares[1].isX && gameSquares[1].isX === gameSquares[2].isX))
+                    ||((gameSquares[3].isMark) && (gameSquares[3].isX === gameSquares[4].isX && gameSquares[4].isX === gameSquares[5].isX))
+                    ||((gameSquares[6].isMark) && (gameSquares[6].isX === gameSquares[7].isX && gameSquares[7].isX === gameSquares[8].isX))
+                    ||((gameSquares[0].isMark) && (gameSquares[0].isX === gameSquares[3].isX && gameSquares[3].isX === gameSquares[6].isX))
+                    ||((gameSquares[1].isMark) && (gameSquares[1].isX === gameSquares[4].isX && gameSquares[4].isX === gameSquares[7].isX))
+                    ||((gameSquares[2].isMark) && (gameSquares[2].isX === gameSquares[5].isX && gameSquares[5].isX === gameSquares[8].isX))
+                    ||((gameSquares[0].isMark) && (gameSquares[0].isX === gameSquares[4].isX && gameSquares[4].isX === gameSquares[8].isX))
+                    ||((gameSquares[2].isMark) && (gameSquares[2].isX === gameSquares[4].isX && gameSquares[4].isX === gameSquares[6].isX))
                     )    {
                         console.log("useEffect win")
                         setWin(true)
